@@ -2,8 +2,9 @@ import java.sql.*;  //import java.sql.*; ==> buradaki yıldız sql importların�
 
 public class PreparedStatement01 {
     public static void main(String[] args) throws SQLException {
-        Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "1234");
+        Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "Mustafa3342.");
         Statement statement = connection.createStatement();
+
         //1. Örnek: Prepared statement kullanarak company adı IBM olan number_of_employees değerini 9999 olarak güncelleyin.
         //PreparedStatement oluşturmak için:
 
